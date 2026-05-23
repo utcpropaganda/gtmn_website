@@ -1,12 +1,53 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(10, 10, 10);
 }
 
 h1 {
     font-size: 40px;
-    color: black;
-    padding-left: 50px;
+    color: rgb(255, 255, 255);
+    padding-left: 25px;
 }
 
+h2 {
+    color: white;
+    text-align: center;
+}
 
+h3 {
+    color: white;
+}
 
+h4 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+/* This defines the space for the side by side text boxes */
+div.boxes {
+    /* The entire row of boxes will take up 80% of the pages width */
+    width: 100%;
+    /* If there's too much text, make a scroller vertically */
+    overflow: auto;
+}
+
+    /* the individual boxes attributes */
+    div.boxes div {
+        background-color: aqua;
+        color: white;
+        border: 5px solid white;
+        margin: 5%;
+        padding: 10px;
+        width: 20%;
+        float: left;
+    }
+
+/* unordered list specifically for the navigation (class="menu")*/
+ul.menu {
+    /* gets rid of bullet points*/
+    list-style-type: none;
+    /* */
+
+}

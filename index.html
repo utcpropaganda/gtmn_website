@@ -1,25 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- title is the name that is shown on the tab-->
     <title>Home - GTMN</title>
+
+    <!--
+        <link> creates a connection to a different file
+        'rel=' is an attribute the relation to the file
+        'href=' is the destination name
+    -->
+    
+    <!-- The css file for html attributes -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- the favicon images that show on a tab -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="faviconsfavicon-16x16.png">
     <link rel="manifest" href="favicons/site.webmanifest">
     <link rel="icon" type="image/svg+xml" href="favicons/GTMaN2.svg">
+
+    <!-- this connects this html to the java script file -->
     <script type="module" src="script.js" defer></script>
 </head>
 
+<!-- Everything in here is shown -->
 <body>
 
-    <ul>
-        <li><a href = "index.html">Home</a></li>
-        <li><a href = "events.html">Events</a></li>
-        <li><a href = "services.html">Services & Contacts</a></li>
+    <!--
+    The page navigator. <ul> starts a list, <li> is the contents.
+    'class=' is like a special name that's given to differenciate this with other instances of <ul> in the css file. So the <ul> for "menu" is only for this 
+    -->
+    <ul class="menu">
+        <li><a class="menu-pages" href = "index.html">Home</a></li>
+        <li><a class="menu-pages" href = "events.html">Events</a></li>
+        <li><a class="menu-pages" href = "service.html">Services & Contacts</a></li>
     </ul>
 
-    <h1>Welcome to Georgia Tech Musicians Network</h1>
+    <h1> Home </h1>
+
+    <h2><i>Welcome to Georgia Tech Musicians Network, Connecting music lovers with one another since 1994!</i></h2>
+    
+    <br>
+    
+    <h3>BillBoard</h3>
+        <div class="boxes">
+            <div>
+                <h4>General Meetings</h4>
+                <p>We meet every Monday at 7PM by the practice rooms!
+             That's on the second floor of the Student Center, past Dancing Goats and 91.1 WREK.
+             Come to hear updates for the organization, upcoing local events, and talk with other folks.
+             Members are encouraged to come and non-members are welcome too :)</p>
+            </div>
+            <div>
+                <h4>General Meetings</h4>
+                <p>We meet every Monday at 7PM by the practice rooms!
+             That's on the second floor of the Student Center, past Dancing Goats and 91.1 WREK.
+             Come to hear updates for the organization, upcoing local events, and talk with other folks.
+             Members are encouraged to come and non-members are welcome too :)</p>
+            </div>
+            <div>
+                <h4>General Meetings</h4>
+                <p>We meet every Monday at 7PM by the practice rooms!
+             That's on the second floor of the Student Center, past Dancing Goats and 91.1 WREK.
+             Come to hear updates for the organization, upcoing local events, and talk with other folks.
+             Members are encouraged to come and non-members are welcome too :)</p>
+            </div>
+
+        </div>
 
     <p id="testP">Hello</p>
     <button id="healthCheckButton">Check Health</button>
