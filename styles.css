@@ -1,3 +1,57 @@
+/* What you see here is the styles.css.
+This basically tells each tag, or elements in <> what
+they should do / look regardless of their default characteristics.
+
+each tag will be defined before {}, and inside it will be the attributes for each tag.
+For example, for <p>, the default text, I want to make it pink. Then it will be formatted like:
+
+    p {
+        color: pink;  /* <-- don't forget the ; after each attribute! * /
+    }
+
+And if I wanted it to be shifted to the center of the screen, I add to it:
+
+    p {
+        color: pink;
+        text-align: left;
+    }
+
+The order of the attributes shouldn't matter.
+
+! Important things on element spacing !
+Refer to the box model when spacing things out from the fathest out to the inside: Margin, border, padding, content
+
+_____________________________________________
+|  _________________Margin________________  |
+|  |EEEEEEEEEEEEEEE Border EEEEEEEEEEEEEE|  |
+|  |EE|  ___________Padding_________  |EE|  |
+|  |EE|  |                          | |EE|  |
+|  |EE|  |          Content         | |EE|  |
+|  |EE|  |__________________________| |EE|  |
+|  |EE|_______________________________|EE|  |
+|  |EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE|  |
+|___________________________________________|
+
+Content: The content of the box, which is where text and images appear.
+Padding: Adds area around the content. It's transparent.
+Border: A non-transparent border that goes around the padding and content.
+Margin: Adds area around outside the border. This is also transparent.
+
+If this is needed, define the amount of spacing with #px (pixels) or #% of the screen (recommended since there will be resizing of the screen):
+
+    div {
+        margin: 5%;
+        padding-left: 25px;
+    }
+
+For the rest of the tutorials, consult to https://www.w3schools.com/css/default.asp
+
+    Enjoy - Will :D. */
+
+
+
+
+
 body {
     background-color: rgb(10, 10, 10);
 }
@@ -10,11 +64,21 @@ h1 {
 
 h2 {
     color: white;
-    text-align: center;
+    text-align: left;
+    margin-left: 5%;
+    
+    
 }
 
 h3 {
     color: white;
+    border: 5px inset red;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1%;
+    text-align: center;
+    
+    
 }
 
 h4 {
@@ -24,6 +88,8 @@ h4 {
 p {
     color: white;
 }
+
+
 
 /* This defines the space for the side by side text boxes */
 div.boxes {
@@ -37,17 +103,36 @@ div.boxes {
     div.boxes div {
         background-color: aqua;
         color: white;
-        border: 5px solid white;
-        margin: 5%;
-        padding: 10px;
-        width: 20%;
+        margin: 2%;
+        border: 5px groove white;
+        padding: 1%;
+
+        width: 25%;
+        height: 25%;
         float: left;
     }
+
+
 
 /* unordered list specifically for the navigation (class="menu")*/
 ul.menu {
     /* gets rid of bullet points*/
     list-style-type: none;
-    /* */
-
+    /* gets rid of the default padding*/
+    padding: 0px;
+    
 }
+
+    ul.menu li{
+        float: left;
+        
+    }
+
+    ul.menu a{
+        padding: 10px;
+        background-color: aquamarine;
+    }
+
+    ul.menu a.active{
+        background-color: rgb(143, 34, 34);
+    }
