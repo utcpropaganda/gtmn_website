@@ -101,15 +101,17 @@ div.boxes {
 
     /* the individual boxes attributes */
     div.boxes div {
-        background-color: aqua;
+        background-color: rgb(16, 80, 80);
         color: white;
-        margin: 2%;
-        border: 5px groove white;
-        padding: 1%;
 
-        width: 25%;
-        height: 25%;
-        float: left;
+        margin: 3%;
+        
+        padding: 2%;
+        border: 5px white ridge;
+        overflow: auto;
+        width: 20%;
+        height: 250px;
+        float:left;
     }
 
 
