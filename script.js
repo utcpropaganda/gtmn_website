@@ -63,9 +63,11 @@ function toggleSignIn() {
 }
 
 onAuthStateChanged(auth, function (user){
-    if (user)
-        console.log("Login Successful")
-    else
-        console.log("Login Failure")
+    if (user) {
+      const uid = user.uid;
+      console.log("Login Successful")
+    } else {
+      console.log("Login Failure")
+    }
 })
 loginButton.addEventListener("click", toggleSignIn, false);
