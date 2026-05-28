@@ -93,6 +93,7 @@ h4 {
 
 p {
     color: white;
+    margin-left: 15px;
 }
 
 
@@ -125,7 +126,7 @@ div.boxes {
 
     /* the individual boxes attributes */
     div.boxes div {
-        background-color: rgb(146, 255, 96);
+        background-color: rgb(47, 148, 0);
         color: white;
 
         margin: 3%;

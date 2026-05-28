@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <!-- title is the name that is shown on the tab-->
-    <title>Home - GTMN</title>
+    <title>Events - GTMN</title>
 
     <!--
         <link> creates a connection to a different file
@@ -14,77 +14,52 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- the favicon images that show on a tab -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="faviconsfavicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/GTMaNcolored.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/GTMaNcolored.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/GTMaNcolored.jpg">
     <link rel="manifest" href="favicons/site.webmanifest">
-    <link rel="icon" type="image/svg+xml" href="favicons/GTMaN2.svg">
+    <!-- <link rel="icon" type="image/svg+xml" href="favicons/GTMaN2.svg"> -->
 
     <!-- this connects this html to the java script file -->
     <script type="module" src="script.js" defer></script>
 </head>
 
 <!-- Everything in here is shown -->
-<body>
+<body style="background-image: url(images/freedom.gif);">
+    <div class="main">
 
-    <!--
-        The page navigator. <ul> starts a list, <li> is the contents.
-        'class=' is like a special name that's given to differenciate this with other instances of <ul> in the css file.
-        So the <ul> for "menu" is only for this, same as "active" for the page that you're on.
-    -->
-    <ul class="menu">
-        <li><a href = "index.html">                    Home</a></li>
-        <li><a class="active" href = "events.html">    Events</a></li>
-        <li><a href = "service.html">                  Services & Contacts</a></li>
-    </ul>
+        <!--
+            The page navigator. <ul> starts a list, <li> is the contents.
+            'class=' is like a special name that's given to differenciate this with other instances of <ul> in the css file.
+            So the <ul> for "menu" is only for this, same as "active" for the page that you're on.
+        -->
+        <ul class="menu">
+            <li><a href = "index.html">  Home</a></li>
+            <li><a class="active" href ="events.html">                Events</a></li>
+            <li><a href = "service.html">               Services & Contacts</a></li>
+            <li><img></li>
+        </ul>
 
-    <!-- <br> makes a break in the page -->
-    <br>
-    
-    <!-- heading 1 -->
-    <h1 style="text-align: center;"> Events </h1>
-    
-    <br>
-    
-    <!-- heading 2 -->
-    <h2>BillBoard</h2>
+        <!-- <br> makes a break in the page -->
+        <br>
+        
+        <!-- heading 1 -->
+        <h1> Events </h1>
 
-        <!-- The start of boxed texts, basically making a box with one type of <div>, and more boxes inside with <div> -->
-        <div class="boxes">
-            <div>
-                <h4>General Meetings</h4>
-                <!-- <p> is default text on screen -->
-                <p>We meet every Monday at 7PM by the practice rooms!
-                That's on the second floor of the Student Center, past Dancing Goats and 91.1 WREK.
-                Come to hear updates for the organization, upcoing local events, and talk with other folks.
-                Members are encouraged to come and non-members are welcome too :)
-                </p>
-            </div>
-            <div>
-                <h4>Discord</h4>
-                <p>
-                    [Insert Image] Our Discord server is a great way to stay connected. 
-                    Talk about your favorite artist, find that desperately needed drummer for your band, 
-                    or get yourself a music teacher (or students!)
-                    <br><br><br>
-                </p>
-            </div>
-            <div>
-                <h4>Instagram</h4>
-                <p>
-                    [Image w link]
-                    We post all our events here, so you never miss out!
-                    <br><br><br><br><br>
-                </p>
-            </div>
+        <!-- things like <i> and <em> can make text italisized or bold -->
+        
+        <br>
+        
+        <!-- heading 2 -->
+        <h2>Our Events</h2>
 
-        </div>
-    
-    <br> 
-    <!-- this is the server backend testing button -->
-    <p id="testP">Hello</p>
-    <button id="healthCheckButton">Check Health</button>
+            <p>none</p>
+        
+        <br> 
+        <!-- this is the server backend testing button -->
+        <p id="testP">Hello</p>
+        <button id="healthCheckButton">Check Health</button>
 
-
+    </div>
 </body>
 </html>
