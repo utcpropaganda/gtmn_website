@@ -55,10 +55,10 @@ For the rest of the tutorials, consult to https://www.w3schools.com/css/default.
 
 body {
     
-    background-image: url(images/space-stars.gif);
+    background-image: url(images/starry-night-sparkly-sky.gif);
     background-position: left top;
     background-repeat: repeat;
-    background-size: 100px 100px;
+    background-size: 200px 200px;
     background-color: rgb(10, 10, 10);
 }
 
@@ -153,7 +153,11 @@ ul.menu {
 
     ul.menu li{
         float: left;
-        border-right: 1px blue solid;
+    }
+
+    ul.menu li.right{
+        float: right;
+        margin-top: -6px;
     }
     
 
@@ -162,6 +166,8 @@ ul.menu {
         background-color: rgb(255, 255, 255);
         text-decoration: none;
         color:purple;
+        border-right: 1px rgb(0, 0, 0) solid;
+        cursor: pointer;
     }
 
     ul.menu a.active{
