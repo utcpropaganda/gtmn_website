@@ -51,15 +51,13 @@ For the rest of the tutorials, consult to https://www.w3schools.com/css/default.
 
 
 
-
-
 body {
-    
-    background-image: url(images/starry-night-sparkly-sky.gif);
+    background-image: url(images/space-stars.gif);
     background-position: left top;
     background-repeat: repeat;
-    background-size: 200px 200px;
+    background-size: 200px 120px;
     background-color: rgb(10, 10, 10);
+    margin-left:0;
 }
 
 h1 {
@@ -83,8 +81,6 @@ h3 {
     margin-right: 5%;
     padding: 1%;
     text-align: center;
-    
-    
 }
 
 h4 {
@@ -97,12 +93,13 @@ p {
 }
 
 
+
 /* This is the box where all the content goes */
 div.main {
     overflow: auto;
-    width: 60%;
+    width: 1515px;
 
-    margin: -8px 20% 0 20%;
+    margin: -8px auto 0 auto;
     
     /* padding: 0 2% 2% 2%; */
     background-color: rgb(0, 0, 0);
@@ -110,9 +107,6 @@ div.main {
     border-width: 5px;
     border-color: rgb(255, 255, 255);
     border-style: groove;
-
-   
-
 }
 
 
@@ -126,17 +120,18 @@ div.boxes {
 
     /* the individual boxes attributes */
     div.boxes div {
-        background-color: rgb(47, 148, 0);
-        color: white;
-
-        margin: 3%;
-        
-        padding: 2%;
-        border: 5px white ridge;
+        background-color: white;
+        color: black;
         overflow: auto;
-        width: 20%;
-        height: 250px;
+
+        margin: auto 120px 3% 0px;
+        padding: 1%;
+        border: 20px white ridge;
         float:left;
+    }
+
+    div.boxes div p{
+        color: black;
     }
 
 
@@ -148,16 +143,27 @@ ul.menu {
     /* gets rid of the default padding*/
     margin-top: 10px;
     padding: 0px;
-    
 }
 
     ul.menu li{
         float: left;
     }
 
-    ul.menu li.right{
-        float: right;
-        margin-top: -6px;
+        ul.menu li.right{
+            float: right;
+            margin-top: -6px;
+        }
+
+    ul.menu p{
+        padding: 10px;
+        margin: -10px 0 0 0;
+        background-color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 20px;
+        color:rgb(0, 0, 0);
+
+        border-top: 1px black solid;
+        border-right: 1px black solid;
     }
     
 
@@ -165,17 +171,33 @@ ul.menu {
         padding: 10px;
         background-color: rgb(255, 255, 255);
         text-decoration: none;
-        color:purple;
-        border-right: 1px rgb(0, 0, 0) solid;
+        font-size: 20px;
+        color:rgb(0, 0, 0);
+
+        border-top: 1px black solid;
+        border-right: 1px black solid;
         cursor: pointer;
     }
 
-    ul.menu a.active{
-        background-color: rgb(0, 0, 0);
-        color: white;
+        /* specifing the tab that you are on */
+        ul.menu a.active{
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        /* what hovering over the element does*/
+        ul.menu a:hover{
+            background-image: url(images/freedom.gif);
+            background-size: 60px 40px;
+            color: white;
+        }
+
+    /* :first-child is for properties on the first <li> object in a list <ul> */
+    ul.menu li:first-child p{
+        border-left: 1px black solid;
     }
 
-    ul.menu a:hover{
-        background-image: url(images/freedom.gif);
-        background-size: 60px 40px;
-    }
+        /* :last-child is the last <li> in a list <ul> */
+        ul.menu li.right:last-child a{
+            border-left: 1px black solid;
+        }
