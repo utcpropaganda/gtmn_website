@@ -58,16 +58,18 @@ body {
     background-size: 200px 120px;
     background-color: rgb(10, 10, 10);
     margin-left:0;
+    /* Global font family */
+    font-family: Tahoma, Verdana, sans-serif;
 }
 
 h1 {
     font-size: 40px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding-left: 25px;
 }
 
 h2 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: left;
     margin-left: 5%;
     
@@ -75,7 +77,7 @@ h2 {
 }
 
 h3 {
-    color: white;
+    color: rgb(0, 0, 0);
     border: 5px inset red;
     margin-left: 5%;
     margin-right: 5%;
@@ -84,11 +86,11 @@ h3 {
 }
 
 h4 {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 p {
-    color: white;
+    color: rgb(0, 0, 0);
     margin-left: 15px;
 }
 
@@ -102,7 +104,7 @@ div.main {
     margin: -8px auto 0 auto;
     
     /* padding: 0 2% 2% 2%; */
-    background-color: rgb(0, 0, 0);
+    background-color: lightgrey;
 
     border-width: 5px;
     border-color: rgb(255, 255, 255);
@@ -126,7 +128,7 @@ div.boxes {
 
         margin: auto 120px 3% 0px;
         padding: 1%;
-        border: 20px white ridge;
+        border: 10px white ridge;
         float:left;
     }
 
