@@ -49,6 +49,17 @@ For the rest of the tutorials, consult to https://www.w3schools.com/css/default.
     Enjoy - Will :D. */
 
 
+/* declare new fonts under the @font-face rule*/
+@font-face {
+    font-family: xp-tahoma;
+    src: url(windows-xp-tahoma.otf);
+    font-size-adjust: 0.2;
+}
+
+@font-face {
+    font-family: VCR_OSD_MONO;
+    src: url(VCR_OSD_MONO_1.001.ttf)
+}
 
 
 body {
@@ -58,8 +69,10 @@ body {
     background-size: 200px 120px;
     background-color: rgb(10, 10, 10);
     margin-left:0;
+
     /* Global font family */
-    font-family: Tahoma, Verdana, sans-serif;
+    font-family: xp-tahoma, Verdana, sans-serif;
+    
 }
 
 h1 {
