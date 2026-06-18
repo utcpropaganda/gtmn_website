@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <!-- title is the name that is shown on the tab-->
-    <title>Events - GTMN</title>
+    <title>Become a member - GTMN</title>
 
     <!--
         <link> creates a connection to a different file
@@ -25,7 +25,7 @@
 </head>
 
 <!-- Everything in here is shown -->
-<body style="background-image: url(images/freedom.gif);">
+<body>
     <div class="main">
 
         <!--
@@ -34,7 +34,8 @@
             So the <ul> for "menu" is only for this, same as "active" for the page that you're on.
         -->
         <ul class="menu">
-            <li><a class="active" href = "index.html">  Home</a></li>
+            
+            <li><a href = "index.html">  Home</a></li>
             <li><a href = "events.html">                Events</a></li>
             <li><a href = "news.html"> News </a></li>
             <li><a href = "service.html">               Services & Contacts</a></li>
@@ -43,24 +44,34 @@
         <ul class="menu">
             <li class="right"><img src="images/GTMaNcolored.jpg" style="width:43px;margin-top: -10px;border-left:none;"></li>
             <li class="right"><a id="loginButton">Login</a></li>
-            <li class="right"><a href="join">Join Us</a></li>
+            <li class="right"><a href="join" class="active">Join Us</a></li>
         </ul>
+
+        
 
         <!-- <br> makes a break in the page -->
         <br>
         
         <!-- heading 1 -->
-        <h1> Events </h1>
+        <h1> Become a member today! </h1>
+
+        <br>
         
         <!-- heading 2 -->
-        <h2>Our Events</h2>
+        <h2>Interested in joining our events and <i>especially</i> <b>practice room access?</b> Then please fill out this form!</h2>
 
-            <p>none</p>
         
-        <br> 
-        <!-- this is the server backend testing button -->
-        <p id="testP">Hello</p>
-        <button id="healthCheckButton">Check Health</button>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeCgASSrPQ4z7F_olpk1Qq7NMX1-I2EGN9sC525fZYn_EGJtw/viewform" 
+            width="600" height="2900" 
+            style="
+                overflow:auto;
+                border:10px groove grey;
+                zoom: 150%;
+                margin:50px 205px 0 205px;
+                
+            ">
+            Loading…
+            </iframe>
 
     </div>
 </body>
